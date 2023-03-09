@@ -2,12 +2,6 @@ import React from "react";
 import { View, Button} from "react-native";
 import { useNavigation} from '@react-navigation/native';
 
-type StackParamList = {
-    ScreenA: undefined,
-    ScreanB: undefined,
-}
-
-
 export function ScreenA(){
     const navigation = useNavigation();
     return (

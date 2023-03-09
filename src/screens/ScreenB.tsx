@@ -12,8 +12,8 @@ export function ScreenB(){
                 onPress={()=> navigation.navigate('ScreenA')}
             />
             <Button
-                title="voltar"
-                onPress={() => navigation.goBack()}
+                title="Ir para o verde"
+                onPress={() => navigation.navigate('ScreenC')}
             />
         </View>
     );

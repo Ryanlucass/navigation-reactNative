@@ -1,5 +1,8 @@
 import {NavigationContainer} from '@react-navigation/native'
-import {StackRoutes} from './stack.routes'
+
+import {StackRoutes} from './stack.routes';
+import {TabRoutes} from './tab.routes';
+import {DrawerRoutes} from './drawer.routes';
 
 //Estou criando um contexto, e chamando as telas relacionadas a esse contexto.
 //no caso, StackRoutes.
@@ -7,7 +10,9 @@ import {StackRoutes} from './stack.routes'
 export function Routes(){
     return(
         <NavigationContainer>
-            <StackRoutes/>
+            {/* <StackRoutes/> */}
+            {/* <TabRoutes/> */}
+            <DrawerRoutes/>
         </NavigationContainer>
         
     )

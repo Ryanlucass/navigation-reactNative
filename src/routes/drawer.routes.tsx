@@ -1,6 +1,6 @@
 import React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer'
-
+import {MaterialIcons} from '@expo/vector-icons';
 
 const {Screen, Navigator } = createDrawerNavigator();
 
@@ -13,13 +13,21 @@ export function DrawerRoutes () {
     return (
         <Navigator>
             <Screen
-            name='Tela A'
+            name='ScreenA'
             component={ScreenA}
+            options={{
+                drawerLabel:'Home',
+                drawerIcon: () => <MaterialIcons name="home" size={22}/>
+            }}
             />
 
             <Screen
-            name='Tela B'
+            name='ScreenB'
             component={ScreenB}
+            options={{
+                drawerLabel:'Cadastrar',
+                drawerIcon: () => <MaterialIcons name="lock" size={22}/>
+            }}
             />
         </Navigator>
     )

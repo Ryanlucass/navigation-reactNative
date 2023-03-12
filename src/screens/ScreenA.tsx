@@ -8,7 +8,7 @@ export function ScreenA(){
         <View style={{flex:1, backgroundColor: 'red', justifyContent:'center'}}>
             <Button
             title="Ir Tela azul"
-            onPress={() => navigation.navigate('ScreenB')}
+            onPress={() => navigation.navigate('ScreenB',{name: 'Rodrigo'})}
             />
         </View>
     );

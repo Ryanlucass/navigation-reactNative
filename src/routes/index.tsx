@@ -13,7 +13,6 @@ export function Routes(){
             {/* <StackRoutes/> */}
             {/* <TabRoutes/> */}
             <DrawerRoutes/>
-        </NavigationContainer>
-        
+        </NavigationContainer>        
     )
 }
